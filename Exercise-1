@@ -1,3 +1,4 @@
+import kotlin.random.Random
 fun main() {
     val s = 50
     val arr = IntArray(s)
@@ -8,14 +9,13 @@ fun main() {
     println(arr.contentToString())
     val num = 25
     val all = arr.toMutableList()
-    val i= mutableSetOf<Int>()
-    while (i.size < 25) {
-        i += Random.nextInt(0, 50)
+    val index= mutableSetOf<Int>()
+    for (i in 0..25) {
+        index += Random.nextInt(0, 50)
     }
-    val del = i.sortedDescending()
+    val del = index.sortedDescending()
     for (i in del) {
         all.removeAt(i)
     }
     print(all)
 }
-
