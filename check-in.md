@@ -23,20 +23,20 @@ This is a general architecture and workflow approach for building a Command Line
 
 **1.addEmployee()**
   - gets firstName,lastName,role,contactNumber and reportingTo from user and creates an id automatically.
-  - stores in  employeeDetails(Map) using Employee data class
+  - stores in  employeeDetails(Map) using Employee data class.
 
 **2.listEmployee()**
-  - id and employeename will be returned in seperate array
+  - id and employeename will be returned.
     
 **3.createCheckIn()**
-  - gets user id and takes current date and current time and validates id using validateId() and hasCheckedInToday()
-  - stores data in checkedInDetails map using CheckIn(Data class)
+  - gets user id and takes current date and current time and validates id using validateId() and hasCheckedInToday().
+  - stores data in checkedInDetails map using CheckIn(Data class).
 
 **4.validateId()**
-  - checks whether id is present in employeeDetails map
+  - checks whether id is present in employeeDetails map.
 
 **5.hasCheckedIn()**
-  - checks whether id is present in checkedInDetails map
+  - checks whether id is present in checkedInDetails map.
 
 > MAP
 
@@ -46,7 +46,8 @@ employeeDetails={
     firstName:"    ",
     lastName:"     ",
     role:"         ",
-    contactNumber:"     "
+    contactNumber:XXXXXXXXXX,
+    reportTo:XXX
   }
 }
 
